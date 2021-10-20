@@ -1,0 +1,24 @@
+.header{
+    background-color: #2B3743;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em 3.5em;
+    color: white;
+    
+    
+    &__title{
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+        font-weight: 500;
+     }
+     &__toggler{
+         border: 0;
+         background-color: transparent;
+         color: white;
+         font-weight: 300;
+         font-size: 1rem;        
+     }
+
+}
+

@@ -1,6 +1,6 @@
 import React from 'react'
-import List from '../Components/List'
-import SearchParams from '../Components/SearchParams'
+import List from '../../Components/List/List'
+import SearchParams from '../../Components/SearchParams/SearchParams'
 
 function HomePage() {
     return (
