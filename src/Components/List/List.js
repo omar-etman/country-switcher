@@ -1,46 +1,10 @@
 import React from 'react'
 import Country from '../Country/Country'
-import './list.scss'
 
 function List() {
     return (
-        <div className='list'>
+        <div>
             <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-            <Country/>
-
-
         </div>
     )
 }
