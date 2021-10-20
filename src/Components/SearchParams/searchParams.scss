@@ -1,11 +1,27 @@
-.searchParams{
-    
-    
-
-    &__searchbar{}
+.searchparams{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__searchbar{
+        border-radius: 5px;
+        border: none;
+        background-color: #2B3743;
+        padding: 1rem;
+        outline: none;
+        color: white;
+    }
+    &__searchbar::placeholder{
+        color: white;
+    }
     &__filter{
-        
-        &__button{}
+        &__button{
+            padding: 1.2rem;
+            background-color: #2B3743;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
         &__options{}
 
     }
