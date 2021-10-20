@@ -1,11 +1,48 @@
-.searchParams{
-    
-    
-
-    &__searchbar{}
-    &__filter{
+.searchparams{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__searchbar{
+        border-radius: 5px;
+        border: none;
+        background-color: #2B3743;
+        padding: 0.8rem 0.8rem;
+        display: flex;
+        align-items: center;
+        width: 35%;
+        i {
+            color: white;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-left: 0.5em;
+            margin-right:0.4em;
+        }
         
-        &__button{}
+        
+        &__input{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            margin-left: 1rem;
+            width: 100%;
+            font-size: 0.9rem;
+            
+        }
+        & ::placeholder{
+            color: white;
+        }
+    }
+
+    &__filter{
+        &__button{
+            padding: 1rem 1.2rem;
+            background-color: #2B3743;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
         &__options{}
 
     }

@@ -5,6 +5,26 @@ function List() {
     return (
         <div>
             <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
         </div>
     )
 }
