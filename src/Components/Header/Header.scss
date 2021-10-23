@@ -15,11 +15,16 @@
         font-weight: 500;
      }
      &__toggler{
+         display: flex;
+         justify-content: center;
+         align-items: center;
          border: 0;
          background-color: transparent;
          color: white;
          font-weight: 300;
-         font-size: 1rem;        
+         font-size: 1rem;    
+         span{margin-left: 0.5em;}  
+         i{color: white;}  
      }
 
 }

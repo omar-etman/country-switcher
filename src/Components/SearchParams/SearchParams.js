@@ -10,17 +10,27 @@ function SearchParams() {
     return (
         <div className="searchparams">
             <div className="searchparams__searchbar">
-            <i><IoIosSearch/></i>
-            <input
-                className="searchparams__searchbar__input"
-                placeholder='Search for a country...'
-                type='text'
+                <i><IoIosSearch/></i>
+                <input
+                    className="searchparams__searchbar__input"
+                    placeholder='Search for a country...'
+                    type='text'
                 />
-                </div>
+            </div>
 
             <div className="searchparams__filter">
+                <button className="searchparams__filter__button">
+                    <span>Filter by Region</span> 
+                    <i><IoIosArrowUp/></i>
+                </button>
+            </div>
+        </div>
+    )
+}
 
-                <button className="searchparams__filter__button">Filter by Region <i><IoIosArrowUp/></i></button>
+export default SearchParams
+
+
 
                 {/* <ul className="searchparams__filter__options">
                     <li>option</li>
@@ -34,9 +44,3 @@ function SearchParams() {
                     <li>option</li>
                     
                 </ul> */}
-            </div>
-        </div>
-    )
-}
-
-export default SearchParams

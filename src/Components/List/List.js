@@ -1,9 +1,10 @@
 import React from 'react'
 import Country from '../Country/Country'
+import './list.scss'
 
 function List() {
     return (
-        <div>
+        <div className="list">
             <Country/>
             <Country/>
             <Country/>

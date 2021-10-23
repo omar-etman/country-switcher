@@ -1,3 +1,7 @@
 .list{    
- border: 2px solid yellow;
+    // border: 2px solid yellow;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    //7ot item fel column tol ma el item dah 15rem, lw kda nzlo fe row gded
+    grid-gap: 4em;
 }

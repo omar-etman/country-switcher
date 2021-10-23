@@ -1,2 +1,35 @@
 .country{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 5px;
+    background-color: #2B3743;
+    padding-bottom: 1.7em;
+    &__image{
+        object-fit: contain;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    &__data{
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        padding: 1em;
+        color: white;
+        &__title{
+            font-size: 1.3rem;
+            padding: 0.5em 0;  
+            margin-bottom: 0.8em;
+        }
+        &__info{
+           p {
+               margin-bottom: .25em;
+               font-weight: 300;
+               span{
+                   font-weight: 500;
+                   margin-right: .25em;
+               }
+            }
+        }
+    }
 }
