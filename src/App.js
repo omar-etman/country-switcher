@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import DetailsPage from './pages/DetailsPage/DetailsPage';
 import Header from './Components/Header/Header'
@@ -13,7 +13,7 @@ function App() {
             <Route exact path = "/">
               <HomePage className='homepage'/>
             </Route>
-            <Route path="/details/:id">
+            <Route path="/details/:type/:id">
               <DetailsPage/>
             </Route>
           </Switch>

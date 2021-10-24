@@ -1,0 +1,80 @@
+.details{
+    display: flex;
+     flex-grow: 1;
+     flex-flow: column wrap;
+     padding: 0 3.5em 3.5em 3.5em;
+     color: white;
+     &__button{
+        padding: 0.87em 1.5em;
+        border: none;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2B3743;
+        border-radius: 5px;
+        margin: 3em 0;
+        width: 10em;
+        text-align: center;
+        &::before{
+            display: block;
+            content: url(test.svg);
+            background-size: 28px 28px;
+            height: 28px;
+            width: 28px;
+            margin-right: 1em;
+}
+        &__link{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    &__data{
+        display: flex;
+        flex-flow: row ;
+       justify-content: center;
+       align-items: center;
+       border: 2px solid green;
+       &__img{
+           margin-right: 2em;
+           border: 2px solid yellow;
+           height: 100%;
+           width:30%
+        //    object-fit: contain;
+
+       }
+       &__info{
+           display:flex;
+           flex-flow: column nowrap;
+           justify-content: flex-start;
+           align-items: center;
+           border: 2px solid lightblue;
+           span{font-weight: 100;
+        margin-left: 0.5em;}
+        //    width: 50%;
+
+           &__title{
+               font-size: 2em;
+               font-weight: bold;
+               margin-bottom: 1em;
+               border: 2px solid red;
+           }
+           &__Halves{
+               display: flex;
+               flex-flow: row nowrap;
+               justify-content: flex-start;
+               align-items: center;
+               border: 2px solid white;
+               &__half{
+                   margin: 2em;
+                   border:2px solid purple;
+               }
+           }
+       }
+
+    }
+}
+
+.back{
+    width: 14em;
+    height: 2em;
+}

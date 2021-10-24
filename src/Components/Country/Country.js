@@ -1,19 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './country.scss'
-function Country() {
+function Country(props) {
+
+    const {name, population, region, key, capital, flag, id } = props
     return (
-        <div className='country'>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/2560px-Flag_of_Egypt.svg.png' alt='flag' className='country__image'/>
+        <Link className='country' key ={key}  to={`/details/name/${id}`}>            
+            <div className='country__image'>
+            <img src={flag} alt='flag' />
+            </div> 
             <div className='country__data'>
-                <h2 className='country__data__title'>Egypt</h2>
+                <h2 className='country__data__title'>{name}</h2>
                 <div className='country__data__info'>
-                    <p><span>Population:</span> boom</p>
-                    <p><span>Region:</span> baam</p>
-                    <p><span>Capital:</span> ping</p>
-                    
+                    <p><span>Population:</span>{population}</p>
+                    <p><span>Region:</span>{region}</p>
+                    <p><span>Capital:</span>{capital}</p>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 
