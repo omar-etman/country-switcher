@@ -6,16 +6,14 @@ import './searchParams.scss'
 
 // <IoIosSearch/>
 // <IoIosArrowBack/>
-function SearchParams() {
+function SearchParams(props) {
+
+    const {selectRegion, region} = props
 
     const [dropdown, setDropDown] = useState(false)
 
     const viewDropDown = (e) => {
         setDropDown(!dropdown)
-    }
-
-    const filterByRegion = (e) => {
-        
     }
 
     return (
@@ -26,6 +24,8 @@ function SearchParams() {
                     className="searchparams__searchbar__input"
                     placeholder='Search for a country...'
                     type='text'
+                    onChange={selectRegion}
+                    value={region}
                 />
             </div>
 

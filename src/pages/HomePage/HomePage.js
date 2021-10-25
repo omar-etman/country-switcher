@@ -20,7 +20,7 @@ function HomePage() {
     }
 
     const selectRegion = (e) => {
-        //function updates region
+        setRegion(e.target.value)
         //region is used to make fetch data
         //setCountries(data)
     }
@@ -29,6 +29,7 @@ function HomePage() {
         <div className='homepage'>
             <SearchParams
                 selectRegion={selectRegion}
+                region={region}
             />
             <List
                 countries={countries}
