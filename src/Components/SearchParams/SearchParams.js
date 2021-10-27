@@ -38,7 +38,7 @@ function SearchParams(props) {
                 </button>
                 {dropdown === true ?
                     <ul 
-                        className="filter__button__dropdown"
+                        className="filter__dropdown"
                         // onClick={}
                     >
                         <li>Africa</li>

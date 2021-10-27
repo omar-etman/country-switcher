@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import './country.scss'
 function Country(props) {
 
-    const {name, population, region, key, capital, flag, id } = props
+    const {name, population, region, capital, flag, id } = props
     return (
-        <Link className='country' key ={key}  to={`/details/name/${id}`}>     
+        <Link className='country'  to={`/details/name/${id}`}>     
        
             <div className='country__image'>
             <img src={flag} alt='flag' />

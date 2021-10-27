@@ -5,24 +5,17 @@
      padding: 0 3.5em 3.5em 3.5em;
      color: white;
      &__button{
-        padding: 0.87em 1.5em;
-        border: none;
-        display:flex;
-        justify-content: center;
-        align-items: center;
+         border: none;
+        //  border: 2px solid black;
+        // display:block;
+        padding: 0.5em 2.5em;
         background-color: #2B3743;
-        border-radius: 5px;
-        margin: 3em 0;
-        width: 10em;
+        font-weight: 100;
+        border-radius: 2px;
+        margin: 0 1em;
         text-align: center;
-        &::before{
-            display: block;
-            content: url(test.svg);
-            background-size: 28px 28px;
-            height: 28px;
-            width: 28px;
-            margin-right: 1em;
-}
+        color: white;
+
         &__link{
             text-decoration: none;
             color: white;
@@ -35,55 +28,55 @@
        align-items: center;
        border: 2px solid green;
        &__img{
+           display: block;
            margin-right: 2em;
            border: 2px solid yellow;
-           height: 100%;
-           width:30%
-        //    object-fit: contain;
+           width:10rem;
+           height:25rem;
 
        }
        &__info{
+           border: 2px solid lightblue;
            display:flex;
            flex-flow: column nowrap;
-           justify-content: flex-start;
-           align-items: center;
-           border: 2px solid lightblue;
+           justify-content: center;
+           align-items: flex-start;
+
            span{font-weight: 100;
         margin-left: 0.5em;}
         //    width: 50%;
 
            &__title{
+               border: 2px solid red;
                font-size: 2em;
                font-weight: bold;
                margin-bottom: 1em;
-               border: 2px solid red;
            }
            &__Halves{
+               border: 2px solid black;
                display: flex;
-               flex-flow: row nowrap;
+               flex-flow: row;
                justify-content: flex-start;
-               align-items: center;
-               border: 2px solid white;
+               align-items: flex-start;
                &__half{
-                   margin: 2em;
+                //    margin: 2em;
                    border:2px solid purple;
                }
            }
        }
        &__borderContainer{
+           border: 2px solid orange;
            display: flex;
-           flex-flow: column wrap;
            align-items: center;
            justify-content: center;
-           border: 2px solid orange;
+           padding: 1em 0;
            &__title{
-               border: 2px solid salmon;
+            //    border: 2px solid salmon;
            }
            &__buttonset{
-               border: 2px solid white;
+            //    border: 2px solid red;
                display: flex;
-               flex-flow: row wrap;
-               justify-content: space-between;
+               justify-content: center;
                align-items: center;
            }
        }

@@ -13,10 +13,10 @@ function List(props) {
                     <h2>Loading</h2>
                 ) : (countries.map((country) => (
                           <Country 
+                            key={country.name.common}
                             name={country.name.common} 
                             population={country.population}
                             region={country.region}
-                            key={country.idd.root}
                             capital={country.capital}
                             flag={country.flags.png}
                             id={country.name.common}

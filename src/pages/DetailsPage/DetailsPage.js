@@ -2,6 +2,7 @@ import {Fragment, useEffect, useState} from 'react'
 import { withRouter } from "react-router"
 import { Link } from 'react-router-dom'
 import './DetailsPage.scss'
+import {BsArrowLeft} from 'react-icons/bs'
 
 function DetailsPage(props) {
     const [country, setCountry] = useState(null)
@@ -44,9 +45,11 @@ function DetailsPage(props) {
                                 to='/'
                             >
                             </Link> */}
-                                Back
+                            <i><BsArrowLeft/></i>
+                               <span>Back</span>
                         </button>
                         <div className='details__data'>
+                            
                             <img className='details__data__img' alt='flag'src={country.flags.svg}/>
                             <div className='details__data__info'>
                                 <h1 className='details__data__info__title'>
@@ -67,9 +70,9 @@ function DetailsPage(props) {
                                     </div>
                                 </div>
                                 <div className='details__data__borderContainer'>
-                                    <p className='data__borderContainer__title'>Border Countries:</p>
+                                    <p className='details__data__borderContainer__title'>Border Countries:</p>
                                     {!country.borders?   <p>No borders Found</p> :
-                                    <div className='data__borderContainer__buttonset'>  
+                                    <div className='details__data__borderContainer__buttonset'>  
                                     {country.borders.map((border)=>{
                                         return <button key={Math.random()} className='details__button' onClick={()=>{handleBorders(border)}}>{border}
                                             {/* <Link to={props.match.url.replace(`${props.match.params.id}`, `${border}`)}>{border}</Link> */}
