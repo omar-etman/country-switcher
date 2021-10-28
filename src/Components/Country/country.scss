@@ -1,4 +1,6 @@
 .country{
+    // border: 2px solid gray;
+    display: block;
     display: flex;
     flex-flow: column nowrap;
     border-radius: 5px;
@@ -10,6 +12,7 @@
     &__image{
         height: 10rem;
         img{
+            display: block;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             width:100%;
@@ -22,6 +25,8 @@
         justify-content: flex-start;
         padding: 1em;
         color: white;
+            // align-items: stretch;
+
         &__title{
             font-size: 1.3rem;
             padding: 0.5em 0;  
@@ -29,11 +34,11 @@
         }
         &__info{
            p {
-               margin-bottom: .25em;
+               margin-bottom: 0.25em;
                font-weight: 300;
                span{
                    font-weight: 500;
-                   margin-right: .25em;
+                   margin-right: 0.25em;
                }
             }
         }

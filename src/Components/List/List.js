@@ -29,5 +29,61 @@ function List(props) {
         </div>
     )
 }
+/* function List(props) {
 
-export default List
+    // const {countries} = props;
+
+    return (
+        <div className="list">
+
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        <div >a111</div>
+        </div>
+    )
+} */
+
+export default List;

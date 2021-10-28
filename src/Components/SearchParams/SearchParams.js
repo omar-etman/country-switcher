@@ -24,7 +24,7 @@ function SearchParams(props) {
                     className="searchparams__searchbar__input"
                     placeholder='Search for a country...'
                     type='text'
-                    onChange={selectRegion}
+                    // onChange={selectRegion}
                     value={region}
                 />
             </div>
@@ -39,13 +39,14 @@ function SearchParams(props) {
                 {dropdown === true ?
                     <ul 
                         className="filter__dropdown"
-                        // onClick={}
+                        onClick={selectRegion}
+                        value={region}
                     >
-                        <li>Africa</li>
-                        <li>Americas</li>
-                        <li>Oceana</li>
-                        <li>Europe</li>
-                        <li>Asia</li>
+                        <li value='africa'>Africa</li>
+                        <li value='americas'>Americas</li>
+                        <li value='oceana'>Oceana</li>
+                        <li value='europe'>Europe</li>
+                        <li value='asia'>Asia</li>
                     </ul>
                     :
                     null
@@ -56,18 +57,3 @@ function SearchParams(props) {
 }
 
 export default SearchParams
-
-
-
-                {/* <ul className="searchparams__filter__options">
-                    <li>option</li>
-                    <li>option</li>
-                    <li>option</li>
-                    <li>option</li>
-                    <li>option</li>
-                    <li>option</li>
-                    <li>option</li>
-                    <li>option</li>
-                    <li>option</li>
-                    
-                </ul> */}

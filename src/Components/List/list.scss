@@ -1,16 +1,17 @@
 .list{    
-    border: 2px solid yellow;
-    grid-gap: 3.5em;
+    // border: 2px solid yellow;
     display: grid;
-    // grid-template-rows: repeat(auto-fit, min-content);
+    grid-gap: 3.5em;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    // grid-template-columns: repeat(4, 1fr);
     //7ot item fel column tol ma el item dah 15rem, lw kda nzlo fe row gded
-    grid-auto-rows:min-content ;
+    // grid-template-rows: repeat(auto-fit, min-content);
+    // grid-auto-rows: auto;
+    // grid-template-rows: repeat(auto,auto);
+    // grid-template-rows: 16rem
+    // grid-auto-rows:min-content ;
     // grid-auto-rows: minmax(max-content, 1fr); 
     //    grid-auto-rows:min(max-content , max(auto, 1fr));
     //    grid-auto-rows: min-content max-content auto;
-// height: auto;
-    // height:fit-content;
-
+    // height: fit-content;
+    // max-height:fit-content;
 }

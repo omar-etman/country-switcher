@@ -1,20 +1,27 @@
 .details{
-    display: flex;
-     flex-grow: 1;
-     flex-flow: column wrap;
-     padding: 0 3.5em 3.5em 3.5em;
+    //  border: 2px solid black;
+    // display: flex;
+    //  flex-grow: 1;
+    //  flex-flow: column wrap;
+     padding: 0 3.5em;
      color: white;
+    //  max-height: 100vh;
+    //  max-width: 100vh;
      &__button{
          border: none;
         //  border: 2px solid black;
-        // display:block;
-        padding: 0.5em 2.5em;
+        display:block;
+        padding: 0.2em 2em;
         background-color: #2B3743;
         font-weight: 100;
         border-radius: 2px;
-        margin: 0 1em;
         text-align: center;
         color: white;
+        text-transform: capitalize ;
+        width: 5rem;
+        cursor: pointer;
+        
+        
 
         &__link{
             text-decoration: none;
@@ -22,62 +29,88 @@
         }
     }
     &__data{
+        // border: 2px solid green;
         display: flex;
         flex-flow: row ;
-       justify-content: center;
-       align-items: center;
-       border: 2px solid green;
-       &__img{
-           display: block;
-           margin-right: 2em;
-           border: 2px solid yellow;
-           width:10rem;
-           height:25rem;
+        justify-content: space-between;
+        align-items:flex-start;
+        //    max-height: 100vh;
+        // height: 100%;
+        // padding-bottom: 6em;
+        font-size: 0.9rem;
+        &__img{
+            display: block;
+            // border: 2px solid yellow;
+            margin-right: 2em;
+            width:30rem;
+            height: 20rem;
+            // align-self: stretch;
+            img{
+            display: block;
+            width:100%;
+            height: 100%;
+            }
+
 
        }
        &__info{
-           border: 2px solid lightblue;
+        //    border: 2px solid lightblue;
            display:flex;
-           flex-flow: column nowrap;
-           justify-content: center;
+           flex-flow: column ;
+        //    justify-content: space-between;
            align-items: flex-start;
+           padding: 2em 0;
+        width: 50%;
 
-           span{font-weight: 100;
-        margin-left: 0.5em;}
-        //    width: 50%;
+           span{
+                font-weight: 100;
+                margin-left: 0.5em;}
+                //    width: 50%;
 
            &__title{
-               border: 2px solid red;
+            //    border: 2px solid red;
                font-size: 2em;
                font-weight: bold;
                margin-bottom: 1em;
+               
            }
            &__Halves{
-               border: 2px solid black;
+            //    border: 2px solid black;
                display: flex;
-               flex-flow: row;
-               justify-content: flex-start;
+               flex-flow: row ;
+               justify-content: space-between;
                align-items: flex-start;
-               &__half{
+               width: 100%;
+               p{margin-bottom: 0.5em;}
+               &__half-first,&__half-second{
                 //    margin: 2em;
-                   border:2px solid purple;
+                //    border:2px solid purple;
+                   
+               }
+               &__half-first{
+                   margin-right: 8em;
                }
            }
        }
        &__borderContainer{
-           border: 2px solid orange;
+        //    border: 2px solid orange;
            display: flex;
            align-items: center;
            justify-content: center;
            padding: 1em 0;
+           margin-top:2em ;
+        //    width:50%;
            &__title{
             //    border: 2px solid salmon;
+            margin-right: 1em;
            }
            &__buttonset{
             //    border: 2px solid red;
-               display: flex;
-               justify-content: center;
-               align-items: center;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 0.5em;
            }
        }
 
@@ -85,6 +118,15 @@
 }
 
 .back{
-    width: 14em;
-    height: 2em;
+    // border: 2px solid khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6em 2.5em;
+    margin: 2em 0;
+    i{
+        margin-right: 0.8em;
+        font-weight:bold;
+    }
+    
 }

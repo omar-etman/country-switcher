@@ -49,21 +49,22 @@ function DetailsPage(props) {
                                <span>Back</span>
                         </button>
                         <div className='details__data'>
-                            
-                            <img className='details__data__img' alt='flag'src={country.flags.svg}/>
+                            <div className='details__data__img'>
+                            <img  alt='flag'src={country.flags.png}/>
+                            </div>
                             <div className='details__data__info'>
                                 <h1 className='details__data__info__title'>
                                     {country.name.common}
                                 </h1>
                                 <div className='details__data__info__Halves'>
-                                    <div className='details__data__info__Halves__half'>
+                                    <div className='details__data__info__Halves__half-first'>
                                         <p>Native Name:<span>{nativeName()}</span></p>
                                         <p>Polulation:<span>{country.population}</span></p>
                                         <p>Region:<span>{country.region}</span></p>
                                         <p>Sub Region:<span>{country.subregion}</span></p>
                                         <p>Capital:<span>{country.capital}</span></p>               
                                     </div>
-                                    <div className='details__data__info__Halves__half'>
+                                    <div className='details__data__info__Halves__half-second'>
                                         <p>Top Level Domain:<span>blabla</span></p>
                                         <p>Languages:<span>{languages()}</span></p>
                                         <p>Currencies:<span></span></p>    
@@ -74,7 +75,7 @@ function DetailsPage(props) {
                                     {!country.borders?   <p>No borders Found</p> :
                                     <div className='details__data__borderContainer__buttonset'>  
                                     {country.borders.map((border)=>{
-                                        return <button key={Math.random()} className='details__button' onClick={()=>{handleBorders(border)}}>{border}
+                                        return <button key={Math.random()} className='details__button' onClick={()=>{handleBorders(border)}}>{border.toLowerCase()}
                                             {/* <Link to={props.match.url.replace(`${props.match.params.id}`, `${border}`)}>{border}</Link> */}
 
                                         </button>
